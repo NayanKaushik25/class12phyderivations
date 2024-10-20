@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,13 +15,22 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('14 Buttons UI - Dark Theme'),
+          title: const Text('Class 12 Physics Derivations'),
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              SizedBox(height: 30),
+              const SizedBox(height: 15),
+              Text(
+                'Choose a unit to view derivations',
+                style: GoogleFonts.mukta(
+                  fontSize: 40,
+                  color: Colors.greenAccent,
+                ),
+                textAlign: TextAlign.left,
+              ),
+              SizedBox(height: 15),
               // Row 1
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -30,10 +42,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -42,7 +54,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 1 pressed');
                         },
-                        child: Text('Button 1', style: TextStyle(fontSize: 16)),
+                        child: const Text('Electric Charges and Fields',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -53,10 +66,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -65,7 +78,9 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 2 pressed');
                         },
-                        child: Text('Button 2', style: TextStyle(fontSize: 16)),
+                        child: const Text(
+                            'Electrostatic Potential and Capacitance',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -82,10 +97,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -94,7 +109,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 3 pressed');
                         },
-                        child: Text('Button 3', style: TextStyle(fontSize: 16)),
+                        child: const Text('Current Electricity',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -105,10 +121,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -117,7 +133,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 4 pressed');
                         },
-                        child: Text('Button 4', style: TextStyle(fontSize: 16)),
+                        child: const Text('Moving Charges and Magnetism',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -134,10 +151,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -146,7 +163,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 5 pressed');
                         },
-                        child: Text('Button 5', style: TextStyle(fontSize: 16)),
+                        child: const Text('Magnetic Properties of Matter',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -157,10 +175,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -169,7 +187,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 6 pressed');
                         },
-                        child: Text('Button 6', style: TextStyle(fontSize: 16)),
+                        child: const Text('Electromagnetic Induction',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -186,10 +205,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -198,7 +217,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 7 pressed');
                         },
-                        child: Text('Button 7', style: TextStyle(fontSize: 16)),
+                        child: const Text('Alternating Current',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -209,10 +229,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -221,7 +241,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 8 pressed');
                         },
-                        child: Text('Button 8', style: TextStyle(fontSize: 16)),
+                        child: const Text('Electromagnetic Waves',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -238,10 +259,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -250,7 +271,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 9 pressed');
                         },
-                        child: Text('Button 9', style: TextStyle(fontSize: 16)),
+                        child: const Text('Ray Optics',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -261,10 +283,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -273,8 +295,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 10 pressed');
                         },
-                        child:
-                            Text('Button 10', style: TextStyle(fontSize: 16)),
+                        child: const Text('Wave Optics',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -291,10 +313,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -303,8 +325,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 11 pressed');
                         },
-                        child:
-                            Text('Button 11', style: TextStyle(fontSize: 16)),
+                        child: const Text('Dual Nature of Matter',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -315,20 +337,20 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
                           ),
                         ),
                         onPressed: () {
-                          print('Button 12 pressed');
+                          print('Atoms');
                         },
                         child:
-                            Text('Button 12', style: TextStyle(fontSize: 16)),
+                            const Text('Atoms', style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -345,10 +367,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -357,8 +379,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 13 pressed');
                         },
-                        child:
-                            Text('Button 13', style: TextStyle(fontSize: 16)),
+                        child: const Text('Nuclei',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
@@ -369,10 +391,10 @@ class MyApp extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           iconColor: Colors.black,
                           backgroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 20),
+                          padding: const EdgeInsets.symmetric(vertical: 20),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
-                            side: BorderSide(
+                            side: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
@@ -381,8 +403,8 @@ class MyApp extends StatelessWidget {
                         onPressed: () {
                           print('Button 14 pressed');
                         },
-                        child:
-                            Text('Button 14', style: TextStyle(fontSize: 16)),
+                        child: const Text('Semiconductors',
+                            style: TextStyle(fontSize: 16)),
                       ),
                     ),
                   ),
